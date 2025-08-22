@@ -9,3 +9,9 @@ build:
 
 package-install:
 	uv tool install dist/*.whl
+
+lint:
+	uvx ruff check
+
+ruff-happy:
+	uvx ruff format
