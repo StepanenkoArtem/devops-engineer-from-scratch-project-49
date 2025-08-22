@@ -15,3 +15,9 @@ lint:
 
 ruff-happy:
 	uvx ruff format
+
+patch:
+	uv version --bump=patch
+
+minor:
+	uv version --bump=minor
