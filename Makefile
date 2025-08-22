@@ -1,3 +1,5 @@
+.PHONY: install brain-games build package-install lint ruff-happy patch minor
+
 install:
 	uv sync
 
