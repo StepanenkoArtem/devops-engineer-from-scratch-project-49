@@ -1,0 +1,64 @@
+# Ruff configuration for Python code style checks
+# https://docs.astral.sh/ruff/configuration/
+
+# Python version target
+target-version = "py313"
+
+# Enable preview rules for latest checks
+preview = true
+
+# Exclude common directories that don't need linting
+exclude = [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+[lint]
+# Use ALL to catch all possible issues, then selectively ignore verbose ones
+select = ["ALL"]
+
+# Ignore these categories to reduce noise:
+ignore = [
+    "D",     # pydocstyle - docstring checks (too verbose for now)
+    "ANN",   # flake8-annotations - type annotations (optional)
+    "COM",   # flake8-commas - trailing commas (style preference)
+    "ERA",   # eradicate - commented code (may have valid comments)
+    "T20",   # flake8-print - print statements (may be intentional)
+    "PD",    # pandas-vet - pandas specific (not using pandas)
+    "NPY",   # NumPy-specific rules (not using numpy)
+    "INP",   # implicit namespace packages (common in scripts)
+    "FBT",   # flake8-boolean-trap (can be too strict)
+    "TD",    # todos (allow TODO comments)
+    "FIX",   # fixme (allow FIXME comments)
+    "CPY",   # flake8-copyright - copyright notices (project preference)
+]
+
+# Allow autofix for all enabled rules
+fixable = ["ALL"]
+
+# This configuration will catch:
+# - Whitespace issues (E201, E251, E303, W291, W292, W293)
+# - Unused imports and variables (F401, F841)
+# - Security issues (S)
+# - Code complexity issues (C901)
+# - Naming conventions (N)
+# - Import sorting issues (I)
+# - And many more style issues
+
+[format]
+# Use double quotes for strings
+quote-style = "double"
+
+# Indent with 4 spaces
+indent-style = "space"
+
+# Unix-style line endings
+line-ending = "lf"
+
+[lint.per-file-ignores]
+# Ignore certain rules for specific files
+"__init__.py" = ["E402", "F401"]  # Allow imports not at top, unused imports
+"tests/*" = ["S101"]  # Allow assert in tests
