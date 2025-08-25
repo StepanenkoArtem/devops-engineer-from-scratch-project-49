@@ -2,6 +2,8 @@ import random
 
 MIN = 0
 MAX = 100
+
+
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
