@@ -18,7 +18,7 @@ def run(game):
         print(f"Question: {question}")
 
         user_answer = get_user_answer()
-        correct_answer = game.get_correct_answer(question)
+        correct_answer = str(game.get_correct_answer(question))
 
         if user_answer == correct_answer:
             print("Correct!")
