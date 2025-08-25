@@ -1,6 +1,6 @@
 [project]
 name = "hexlet-code"
-version = "0.3.0"
+version = "0.4.6"
 description = "Hexlet devops course project 1"
 readme = "README.md"
 requires-python = ">=3.13"
