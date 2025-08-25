@@ -1,6 +1,6 @@
 [project]
 name = "hexlet-code"
-version = "0.4.6"
+version = "0.5.12"
 description = "Hexlet devops course project 1"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -25,3 +25,4 @@ dev = [
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
