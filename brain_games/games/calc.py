@@ -11,11 +11,13 @@ def get_question():
     first_operand = get_operand()
     second_operand = get_operand()
     operator = get_operator()
-    return f"{first_operand} {operator} {second_operand}"
+
+    question = f"{first_operand} {operator} {second_operand}"
+    answer = str(get_correct_answer(first_operand, second_operand, operator))
+    return question, answer
 
 
-def get_correct_answer(question):
-    first_operand, operator, second_operand = question.split(" ")
+def get_correct_answer(first_operand, second_operand, operator):
     first_operand = int(first_operand)
     second_operand = int(second_operand)
 

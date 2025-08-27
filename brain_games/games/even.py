@@ -8,7 +8,9 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_question():
-    return random.randint(MIN, MAX)
+    question = random.randint(MIN, MAX)
+    answer = get_correct_answer(question)
+    return question, answer
 
 
 def get_correct_answer(question):

@@ -10,13 +10,9 @@ DESCRIPTION = "Find the greatest common divisor of given numbers."
 def get_question():
     first = get_operand()
     second = get_operand()
-    return f"{first} {second}"
-
-
-def get_correct_answer(question):
-    first, second = question.split(" ")
-
-    return calculate_gcd(int(first), int(second))
+    question = f"{first} {second}"
+    answer = str(calculate_gcd(first, second))
+    return question, answer 
 
 
 def get_operand():
