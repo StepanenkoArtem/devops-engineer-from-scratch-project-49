@@ -12,10 +12,10 @@ DESCRIPTION = "What number is missing in the progression?"
 def get_question():
     progression = build_progression()
 
-    hidden_item_index = random.randint(0, len(progression) - 1) 
+    hidden_item_index = random.randint(0, len(progression) - 1)
     answer = progression[hidden_item_index]
-    progression[hidden_item_index] = '..'
-    question = ' '.join(list(map(lambda number: str(number), progression)))
+    progression[hidden_item_index] = ".."
+    question = " ".join(list(map(lambda number: str(number), progression)))
     return question, answer
 
 
