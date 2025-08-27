@@ -14,11 +14,10 @@ def run(game):
     success_count = 0
 
     while success_count < MAX_SUCCESS_COUNT:
-        question = game.get_question()
+        question, correct_answer = game.get_question()
         print(f"Question: {question}")
 
         user_answer = get_user_answer()
-        correct_answer = str(game.get_correct_answer(question))
 
         if user_answer == correct_answer:
             print("Correct!")
