@@ -1,7 +1,10 @@
 [project]
 name = "hexlet-code"
-version = "0.6.4"
+version = "0.7.3"
 description = "Hexlet devops course project 1"
+authors = [
+    { name = "Artem Stepanenko", email = "artem.stepanenko.ks.ua@gmail.com" }
+]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

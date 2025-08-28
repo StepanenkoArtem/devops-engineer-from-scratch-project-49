@@ -12,7 +12,7 @@ def get_question():
     second = get_operand()
     question = f"{first} {second}"
     answer = str(calculate_gcd(first, second))
-    return question, answer 
+    return question, answer
 
 
 def get_operand():
