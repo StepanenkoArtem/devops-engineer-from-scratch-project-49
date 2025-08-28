@@ -4,7 +4,7 @@ MIN_LENGTH = 5
 MAX_LENGTH = 15
 
 MIN_STEP = 1
-MAX_STEP = 100
+MAX_STEP = 10
 
 DESCRIPTION = "What number is missing in the progression?"
 
