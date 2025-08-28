@@ -64,4 +64,49 @@ Each game follows the same pattern:
 
 Good luck and have fun training your brain!
 
+## Game Demonstrations
 
+### brain-even
+Determine if a given number is even.
+
+**Winning game:**
+![brain-even win](asciinemas/brain-even-win.gif)
+
+**Losing game:**
+![brain-even lose](asciinemas/brain-even-lose.gif)
+
+### brain-calc
+Calculate simple mathematical expressions.
+
+**Winning game:**
+![brain-calc win](asciinemas/brain-calc-win.gif)
+
+**Losing game:**
+![brain-calc lose](asciinemas/brain-calc-lose.gif)
+
+### brain-gcd
+Find the greatest common divisor of two numbers.
+
+**Winning game:**
+![brain-gcd win](asciinemas/brain-gcd-win.gif)
+
+**Losing game:**
+![brain-gcd lose](asciinemas/brain-gcd-lose.gif)
+
+### brain-progression
+Find the missing number in an arithmetic progression.
+
+**Winning game:**
+![brain-progression win](asciinemas/brain-progression-win.gif)
+
+**Losing game:**
+![brain-progression lose](asciinemas/brain-progression-lose.gif)
+
+### brain-prime
+Determine if a given number is prime.
+
+**Winning game:**
+![brain-prime win](asciinemas/brain-prime-win.gif)
+
+**Losing game:**
+![brain-prime lose](asciinemas/brain-prime-lose.gif)
